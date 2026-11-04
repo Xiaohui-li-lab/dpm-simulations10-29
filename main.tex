@@ -1,0 +1,456 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% chiral_paper.tex
+% A chiral quantum-state hypothesis for cosmic expansion and spiral galaxies
+% A4 format, numeric citations [n], Nature-style manuscript
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,10pt]{article}
+
+% Page geometry
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{a4paper,left=20mm,right=20mm,top=25mm,bottom=25mm}
+
+% Maths and symbols
+\usepackage{amsmath,amsfonts,amssymb}
+
+% Figures
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+% Line numbers for manuscript style
+\usepackage{lineno}
+\linenumbers
+
+% Author/affiliation formatting
+\usepackage{authblk}
+\renewcommand\Authands{ and }
+
+% Custom keywords command
+\providecommand{\keywords}[1]{%
+  \vspace{0.5em}\noindent\textbf{Keywords:} #1\par\vspace{0.5em}}
+
+\title{\textbf{A chiral quantum-state hypothesis for cosmic expansion and the
+       spiral morphology of galaxies}}
+
+\author{Xiaohui Li}
+\affil{Independent Researcher, Baoji 721000, China}
+\affil{Correspondence: \texttt{danceluck@163.com};
+       ORCID: 0009-0003-8233-7191}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+The Big Bang is conventionally treated as an initial condition, and the origin
+of angular momentum in spiral galaxies remains an open problem in
+astrophysics. We propose a unified, falsifiable conjecture: fundamental
+quantum states carry a left--right chirality, and identical chiral states
+attract whereas opposite chiral states repel. In the earliest universe, an
+equal mixture of left- and right-handed states produces a net repulsive
+interaction that we identify, phenomenologically, with the expanding phase of
+the Big Bang. A minute stochastic fluctuation favouring one handedness then
+triggers a chiral phase transition; the resulting single-chiral background
+mediates an effective long-range attraction interpretable as gravitation,
+while its helical topology seeds the vorticity that produces rotating, spiral
+galaxies. We formulate a minimal field-theoretic model, derive six testable
+signatures, and outline a validation programme using Planck, SDSS, Galaxy
+Zoo, Gaia and IllustrisTNG data. The framework is presented as a theoretical
+hypothesis awaiting empirical confirmation.
+\end{abstract}
+
+\keywords{chirality; quantum states; cosmic expansion; spiral galaxies;
+large-scale structure; symmetry breaking}
+
+\section{Introduction}
+
+The standard $\Lambda$CDM cosmology successfully describes cosmic expansion,
+the cosmic microwave background (CMB), and the formation of large-scale
+structure \cite{planck18,peebles,dodelson}. Yet it leaves two deep questions
+unanswered. First, why did the universe begin in a hot, dense, expanding
+state---the Big Bang? Inflation provides a mechanism for the origin of
+structure \cite{linde}, but the initial expansion itself is usually imposed by
+hand. Second, why do most galaxies exhibit ordered rotation and spiral arms?
+Tidal torque theory explains the acquisition of angular momentum from
+large-scale tides \cite{leepen,codis}, but the statistical distribution of
+spin directions and any possible cosmological handedness remain debated
+\cite{longo,iye}.
+
+Here we propose a speculative but conceptually simple unification. We
+postulate that quantum states possess an intrinsic left--right chirality and
+that the interaction between two chiral states follows a
+``same-attract, opposite-repel'' rule. The idea is motivated by the behaviour
+of magnetic field lines: filings lying on the same field line are mutually
+attracted into a filament, whereas field lines of the same sense repel each
+other. We translate this magnetic analogy into a ``chiral matter-line''
+model.
+
+If the primordial universe contained equal numbers of left- and right-handed
+states, the dominant inter-chiral repulsion would drive an outward
+expansion---identified here with the Big Bang. A tiny fluctuation that made
+one chirality slightly more numerous would be amplified by a chiral phase
+transition, leaving the universe dominated by a single handedness. The
+surviving same-chiral background then provides an attractive force analogous
+to gravity, and its helical structure naturally seeds the rotation and spiral
+morphology of galaxies. We emphasize that this is a hypothesis, not an
+established theory; we supply concrete tests by which it can be falsified.
+
+\section{Results}
+
+\subsection{A minimal chiral matter-line model}
+
+Consider a continuum of quantum ``matter-line'' elements labelled by chirality
+$a\in\{L,R\}$. The pairwise interaction energy between two elements separated
+by distance $r$ is
+\begin{equation}
+U_{ab}(r)=-\alpha\,\delta_{ab}\frac{e^{-r/\lambda}}{r}
++\beta\,(1-\delta_{ab})\frac{e^{-r/\lambda}}{r},
+\label{eq:Uab}
+\end{equation}
+where $\alpha>0$ governs same-chiral attraction, $\beta>0$ governs
+opposite-chiral repulsion, and $\lambda$ is a coherence length. The Kronecker
+delta $\delta_{ab}$ selects the interaction channel. Equation~\eqref{eq:Uab}
+is the simplest Yukawa-like form consistent with the postulated rule.
+
+In a homogeneous early universe with number densities $n_L$ and $n_R$, the
+interaction energy density is
+\begin{equation}
+\mathcal{E}_{\rm int}
+=\frac12\sum_{a,b}n_a n_b\int d^3r\,U_{ab}(r)
+\approx -\frac14\alpha\lambda^2(n_L^2+n_R^2)
++\frac12\beta\lambda^2 n_L n_R.
+\label{eq:Eint}
+\end{equation}
+For an exactly symmetric mixture, $n_L=n_R=n/2$, this becomes
+\begin{equation}
+\mathcal{E}_{\rm int}=\frac{n^2\lambda^2}{8}(\beta-\alpha).
+\label{eq:Esym}
+\end{equation}
+If $\beta>\alpha$, the total interaction energy is positive. The system can
+lower its energy by separating the two chiral species and increasing the
+volume they occupy. We interpret this outward segregation as the kinetic
+driver of the initial cosmic expansion---the Big Bang in this picture is the
+macroscopic manifestation of primordial chiral repulsion.
+
+\subsection{Chiral symmetry breaking}
+
+Define the order parameter $\eta=(n_L-n_R)/(n_L+n_R)$. Near a critical
+temperature $T_c$ the free-energy density can be written as
+\begin{equation}
+f=f_0+a(T-T_c)\eta^2+b\eta^4,\qquad a,b>0.
+\label{eq:GL}
+\end{equation}
+For $T<T_c$ the symmetric state $\eta=0$ becomes unstable and the minima occur
+at $\eta=\pm1$. Which minimum is selected depends on the first statistically
+significant fluctuation; therefore the final handedness of the universe is
+random. This naturally explains why the observed cosmos has a single dominant
+chirality without requiring a pre-existing bias: a minute excess, possibly
+quantum in origin, is amplified to global symmetry breaking.
+
+\subsection{Emergent gravitation in a single-chiral background}
+
+After symmetry breaking, only one chiral species remains as the dominant
+background. A test mass $m_i$ embedded in this background interacts
+attractively with another mass $m_j$ through the same-chiral channel of
+Eq.~\eqref{eq:Uab}. Averaging over the uniform background density $n_{\rm bg}$
+gives an effective two-body potential
+\begin{equation}
+V_{\rm eff}(r)=
+-\frac{\alpha n_{\rm bg}\lambda^2}{m^2}\,
+\frac{m_i m_j}{r}\,e^{-r/\lambda}.
+\label{eq:Veff}
+\end{equation}
+If $\lambda$ is much larger than cosmological scales, the Yukawa cutoff can be
+ignored. Identifying the prefactor with Newton's constant yields the
+consistency relation
+\begin{equation}
+G \approx \frac{\alpha n_{\rm bg}\lambda^2}{m^2}.
+\label{eq:G}
+\end{equation}
+Equation~\eqref{eq:G} does not uniquely fix $\alpha$, $n_{\rm bg}$ and
+$\lambda$, but it shows that the observed weakness of gravity ($G$ small) can
+arise if the chiral background density is low or the coherence length is
+large. The model therefore predicts that gravitational attraction is a
+collective, emergent property of a single-chiral quantum vacuum.
+
+\subsection{Spiral structure and angular momentum}
+
+A uniform chiral background is not rotationally trivial: it carries helicity
+density
+\begin{equation}
+\mathcal{H}=\mathbf{A}\cdot(\nabla\times\mathbf{A}),
+\label{eq:helicity}
+\end{equation}
+where $\mathbf{A}$ is a vector potential whose circulation defines the
+handedness of the matter lines. A left-handed background has $\mathcal{H}<0$
+and a right-handed background has $\mathcal{H}>0$. When a density perturbation
+collapses in this helical medium, the chiral field exerts a torque
+\begin{equation}
+\boldsymbol{\tau}\approx\int\rho\,\mathbf{r}\times
+\mathbf{g}_{\rm chiral}\,d^3r,
+\qquad
+\mathbf{g}_{\rm chiral}\propto\mathcal{H}\,\mathbf{r},
+\label{eq:torque}
+\end{equation}
+so that the resulting halo acquires angular momentum $\mathbf{J}$ whose sign
+is locked to the background helicity. Conservation of angular momentum during
+collapse then produces rotating disks. Spiral arms are density waves
+\cite{linshu} superposed on the rotating disk; their handedness is correlated
+with the sign of $\mathcal{H}$. Thus the prevalence of spiral galaxies
+reflects the single chirality of the cosmic background.
+
+\subsection{Testable predictions}
+
+The model makes the following falsifiable predictions:
+\begin{enumerate}
+\item \textbf{Large-scale parity asymmetry.} The distribution of spiral-galaxy
+  handedness should exhibit a dipole anisotropy, with amplitude
+  $10^{-3}$--$10^{-2}$, detectable in Galaxy Zoo \cite{galaxyzoo},
+  Iye--Sugai \cite{iye} and Gaia DR3 \cite{gaia} samples.
+\item \textbf{Spin--tide correlation.} The spin axes of haloes should correlate
+  more strongly with the local cosmic-web tidal shear than predicted by
+  standard tidal-torque theory \cite{leepen,codis}. The excess signal scales
+  with $\lambda$ and can be measured in N-body simulations.
+\item \textbf{CMB parity anomalies.} A helical vacuum imprints parity-odd
+  fluctuations on the CMB. The model predicts enhanced low-$\ell$ power
+  asymmetry and non-zero $\langle T(\mathbf{n})E(\mathbf{n}')B(\mathbf{n}'')
+  \rangle$ correlations, testable with Planck data \cite{planck18}.
+\item \textbf{Chiral primordial gravitational waves.} The same helicity
+  density that seeds vorticity should source circularly polarized gravitational
+  waves, producing a non-zero TB or EB cross-correlation in CMB B-modes
+  \cite{bicep}.
+\item \textbf{Cosmic vorticity.} The dark-matter velocity field should possess
+  a coherent curl component at the level $|\nabla\times\mathbf{v}|\sim
+  10^{-14}$ s$^{-1}$, accessible through redshift-space distortions
+  \cite{sdss}.
+\item \textbf{Lepton chiral asymmetry.} The phase transition that fixes cosmic
+  chirality may leave a relic neutrino--antineutrino asymmetry of order
+  $10^{-9}$--$10^{-10}$, influencing big-bang nucleosynthesis and the CMB
+  effective number of relativistic species \cite{goldhaber,christenson}.
+\end{enumerate}
+
+\section{Methods}
+
+\subsection{Datasets}
+
+We propose to test the hypothesis against publicly available data:
+Planck 2018 CMB temperature and polarization maps and angular power spectra
+\cite{planck18}; SDSS-IV eBOSS DR16 galaxy clustering and redshift-space
+distortion measurements \cite{sdss}; Galaxy Zoo 2 morphological
+classifications of spiral handedness \cite{galaxyzoo}; Gaia DR3 astrometry and
+radial velocities for local spiral-chirality mapping \cite{gaia}; and
+IllustrisTNG cosmological hydrodynamical simulations for benchmark halo spin
+statistics \cite{illustris,illustris2}.
+
+\subsection{Simulation strategy}
+
+The chiral interaction can be implemented in the N-body code GADGET-4
+\cite{gadget4} by adding a long-range Yukawa term to the gravitational force,
+with sign controlled by a particle chirality tag. We recommend simulation
+suites with box sizes $L=100$, $300$ and $1000\,h^{-1}$ Mpc and $N=1024^3$
+particles, run for both $\Lambda$CDM and the chiral model. Initial conditions
+should be generated with MUSIC \cite{music} using the same random seed.
+Benchmarks:
+(i) matter power spectrum:
+$|P_{\rm chiral}(k)-P_{\Lambda\rm CDM}(k)|/P_{\Lambda\rm CDM}(k)<2\%$ for
+$k<1\,h$ Mpc$^{-1}$;
+(ii) halo mass function: agreement within $10\%$ for
+$M>10^{12}\,M_\odot$;
+(iii) galaxy spin dipole amplitude: $\Lambda$CDM predicts $A<2\times10^{-2}$;
+the chiral model predicts $A\sim10^{-2}$--$10^{-3}$.
+
+\subsection{Statistical validation}
+
+Spiral handedness will be binned in a HEALPix map. The dipole amplitude and
+direction will be extracted by a $\chi^2$ fit to
+$P(\theta,\phi)=P_0[1+A\cos\theta']$. Significance will be assessed by
+randomizing handedness $10^6$ times and computing a $p$-value. The same
+procedure will be applied to simulated galaxy catalogs.
+
+\section{Data availability}
+
+All observational datasets used in the proposed validation are publicly
+available through the Planck Legacy Archive, SDSS Science Archive Server,
+Galaxy Zoo data repository, Gaia Archive, and IllustrisTNG database.
+Simulation outputs and derived catalogs will be released upon acceptance.
+
+\section{Code availability}
+
+The modified GADGET-4 patch, initial-condition generation scripts, and
+analysis pipelines will be deposited at Zenodo and GitHub
+(\url{https://github.com/XiaohuiLi/chiral-cosmos}) with version-controlled
+DOIs.
+
+\section{Author contributions}
+
+X.L. conceived the chiral matter-line hypothesis, developed the formal model,
+designed the validation programme, wrote the manuscript, prepared all figures,
+and approved the final version.
+
+\section{Competing interests}
+
+The author declares no competing interests.
+
+\section{Acknowledgements}
+
+The author thanks the open-science community for making Planck, SDSS, Galaxy
+Zoo, Gaia and IllustrisTNG data publicly accessible. Discussions with
+colleagues in cosmology and quantum foundations helped shape the presentation
+of this hypothesis.
+
+\begin{thebibliography}{20}
+
+\bibitem{planck18}
+Planck Collaboration,
+``Planck 2018 results. VI. Cosmological parameters'',
+\textit{Astron. Astrophys.} \textbf{641}, A6 (2020).
+
+\bibitem{sdss}
+Alam, S. et al. (SDSS-IV),
+``The completed extended Baryon Oscillation Spectroscopic Survey'',
+\textit{Astrophys. J. Suppl.} \textbf{259}, 35 (2022).
+
+\bibitem{galaxyzoo}
+Lintott, C. J. et al.,
+``Galaxy Zoo: morphologies derived from visual inspection of galaxies from the
+Sloan Digital Sky Survey'',
+\textit{Mon. Not. R. Astron. Soc.} \textbf{389}, 1179--1189 (2008).
+
+\bibitem{gaia}
+Gaia Collaboration,
+``Gaia Data Release 3. Summary'',
+\textit{Astron. Astrophys.} \textbf{674}, A1 (2023).
+
+\bibitem{illustris}
+Nelson, D. et al.,
+``The IllustrisTNG Simulations: public data release'',
+\textit{Comput. Astrophys. Cosmol.} \textbf{6}, 2 (2019).
+
+\bibitem{illustris2}
+Springel, V. et al.,
+``First results from the IllustrisTNG simulations: matter and galaxy
+clustering'',
+\textit{Mon. Not. R. Astron. Soc.} \textbf{475}, 676--698 (2018).
+
+\bibitem{longo}
+Longo, M. J.,
+``Evidence for a dipole in the spin axes of spiral galaxies'',
+\textit{Astrophys. J. Lett.} \textbf{741}, L19 (2011).
+
+\bibitem{iye}
+Iye, M. \& Sugai, H.,
+``A search for dipole anisotropy in the handedness of spiral galaxies'',
+\textit{Publ. Astron. Soc. Jpn} \textbf{63}, L43--L46 (2011).
+
+\bibitem{peebles}
+Peebles, P. J. E.,
+\textit{Principles of Physical Cosmology}
+(Princeton Univ. Press, 1993).
+
+\bibitem{dodelson}
+Dodelson, S. \& Schmidt, F.,
+\textit{Modern Cosmology}, 2nd edn
+(Academic Press, 2021).
+
+\bibitem{ryden}
+Ryden, B.,
+\textit{Introduction to Cosmology}, 2nd edn
+(Cambridge Univ. Press, 2017).
+
+\bibitem{goldhaber}
+Goldhaber, M., Grodzins, L. \& Sunyar, A.,
+``Helicity of neutrinos'',
+\textit{Phys. Rev.} \textbf{109}, 1015--1017 (1958).
+
+\bibitem{christenson}
+Christenson, J. H. et al.,
+``Evidence for the $2\pi$ decay of the $K_2^0$ meson'',
+\textit{Phys. Rev. Lett.} \textbf{13}, 138--140 (1964).
+
+\bibitem{linde}
+Linde, A. D.,
+``Inflationary cosmology'',
+\textit{Lect. Notes Phys.} \textbf{738}, 1--54 (2008).
+
+\bibitem{bicep}
+Ade, P. A. R. et al. (BICEP/Keck),
+``Improved constraints on primordial gravitational waves using Planck, WMAP,
+and BICEP/Keck observations through the 2018 observing season'',
+\textit{Phys. Rev. Lett.} \textbf{127}, 151301 (2021).
+
+\bibitem{gadget4}
+Springel, V. et al.,
+``Simulating cosmic structure formation with the GADGET-4 code'',
+\textit{Mon. Not. R. Astron. Soc.} \textbf{506}, 2871--2896 (2021).
+
+\bibitem{leepen}
+Lee, J. \& Pen, U.-L.,
+``The spin of spiral galaxies and the cosmic web'',
+\textit{Astrophys. J.} \textbf{681}, 1068--1074 (2008).
+
+\bibitem{codis}
+Codis, S. et al.,
+``Connecting the spin of dark matter haloes to the cosmic web'',
+\textit{Mon. Not. R. Astron. Soc.} \textbf{427}, 3320--3336 (2012).
+
+\bibitem{linshu}
+Lin, C. C. \& Shu, F. H.,
+``On the spiral structure of disk galaxies'',
+\textit{Astrophys. J.} \textbf{140}, 646--655 (1964).
+
+\bibitem{music}
+Hahn, O. \& Abel, T.,
+``Multi-scale initial conditions for cosmological simulations'',
+\textit{Mon. Not. R. Astron. Soc.} \textbf{415}, 2101--2121 (2011).
+
+\end{thebibliography}
+\textbf{\textbf{Declarations}}
+
+  \textbf{\textbf{Acknowledgements}}
+
+The author thanks colleagues for discussions on quantum aggregates, consciousness, emergence, and dimensionality. 
+
+ \textbf{\textbf{Funding Statement}}:This research did not receive any specific grant from funding agencies in the public,commercial,or not-for-profit sectors.
+
+Currently, there are no sponsors. Or I haven't found any sponsors or organizations yet. However, if I can publish it, I will cover part of the costs myself. Or it will be easier to find sponsors. (For example, the German company E.ON. I have previously found international buyers for their wind turbines.)
+
+ \textbf{\textbf{Competing Interests}}
+
+The author declares no competing interests.
+
+ \textbf{\textbf{Author Contributions}}
+
+Xiaohui Li: Conceptualization, Methodology, Investigation, Formal analysis, Writing – Original Draft, Visualization, Writing – Review \& Editing.
+
+AI assisted me in rewriting the original text into an article that meets the submission requirements of Journal of the American Mathematical Society. No content was added or omitted.
+
+ The author is solely responsible for the work described in this manuscript and has approved the final version for publication.
+
+ \textbf{\textbf{Clinical trial:}}not applicable.
+
+ \textbf{\textbf{Ethics and Consent to Participate declarations}}: not applicable.
+
+ Hi,
+
+This is an original work by the author. There is only one author:Xiaohui Li.
+
+The article accurately reflects the scientific results.
+
+Xiaohui Li agreed to submit the manuscript.
+
+This manuscript has not been published in any other journals.
+
+The author accepts the established procedure for selecting and publishing manuscripts.
+
+good
+
+Xiaohui Li
+
+
+
+ \textbf{\textbf{Clinical trial number}}: not applicable.
+\end{document}
